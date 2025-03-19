@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Step Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Correct Socket.io Library -->
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    
+    <!-- Main Script -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🚶‍♂️ Real-Time Step Tracker</h1>
+        
+        <div class="step-tracker">
+            <h2>Your Steps: <span id="stepCount">0</span></h2>
+            <button id="stepBtn">Add Step</button>
+            <button onclick="requestMotionPermission()">Enable Step Tracking</button>
+        </div>
+        
+        <div class="leaderboard">
+            <h2>🏆 Leaderboard</h2>
+            <ul id="leaderboardList"></ul>
+        </div>
+    </div>
+</body>
+</html>
